@@ -1,0 +1,33 @@
+.table-item {
+  display: flex;
+  border: solid #777777;
+  border-width: 0 0 1px;
+  line-height: 22px;
+  &--odd {
+    background-color: #eeeeee;
+  }
+  &__date {
+    width: 15%;
+    text-align: right;
+    border: solid #777777;
+    border-width: 0 1px 0 0;
+    padding: 0 4px;
+    &--head {
+      text-align: left;
+    }
+  }
+  &__time {
+    width: 15%;
+    text-align: right;
+    border: solid #777777;
+    border-width: 0 1px 0 0;
+    padding: 0 4px;
+    &--head {
+      text-align: left;
+    }
+  }
+  &__description {
+    width: 70%;
+    padding: 0 4px;
+  }
+}

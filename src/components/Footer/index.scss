@@ -1,0 +1,13 @@
+.footer {
+  position: absolute;
+  background-color: #00b000;
+  height: 80px;
+  bottom: 0;
+  width: 100%;
+  &__copyright {
+    line-height: 80px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+  }
+}

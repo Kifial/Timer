@@ -1,0 +1,57 @@
+.stats {
+  width: 1200px;
+  margin: 0 auto;
+  &__tabs {
+    padding: 10px 0 0;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  &__tab {
+    flex: 1 1;
+    text-align: center;
+  }
+  &__tab-item {
+    position: relative;
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 6px;
+    cursor: pointer;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 1px;
+      background-color: #000000;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 0);
+      transition: .3s ease;
+    }
+    &:hover {
+      &:before {
+        width: 100%;
+      }
+    }
+    &--active {
+      color: #008000;
+      &:before {
+        background-color: #008000;
+        width: 100%;
+      }
+    }
+  }
+  &__select {
+    font-size: 16px;
+    margin: 0 0 0 6px;
+  }
+  &__chart {
+    margin-bottom: 40px;
+  }
+  &__chart-not-found {
+    text-align: center;
+    color: #008000;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}

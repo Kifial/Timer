@@ -1,0 +1,22 @@
+.table {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto 60px;
+  &__filters {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__filter {
+    flex: 1 1;
+    text-align: center;
+    text-decoration: underline;
+    line-height: 22px;
+    cursor: pointer;
+  }
+  &__items {
+    position: relative;
+    border: solid #777777;
+    border-width: 1px 1px 0;
+    box-shadow: 2px 7px 20px rgba(0,0,0, 0.25);
+  }
+}
